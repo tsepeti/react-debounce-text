@@ -61,3 +61,13 @@ class App extends Component {
 }
 
 ```
+
+## Styles
+
+By default, the package **has no style**.
+
+Consider importing the stylesheet `(scss)` it comes with:
+
+```SCSS
+@import "../../node_modules/react-debounce-text/styles/style"
+``
