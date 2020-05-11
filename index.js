@@ -18,12 +18,11 @@ export default class DebounceText extends Component {
 
   changeQuery(event) {
     const { value } = event.target;
-    const query = value.trim();
 
     return this.setState(
       {
-        value: query,
-        showResults: !!query,
+        value,
+        showResults: !!value.trim(),
       },
       () => {
         this.debounced(this.state.value);
@@ -91,4 +90,3 @@ export default class DebounceText extends Component {
     );
   }
 }
-
