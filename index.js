@@ -45,6 +45,7 @@ export default class DebounceText extends Component {
       <li
         className="react-debounce-text__results-item"
         onClick={() => this.onSelect(item, i)}
+        key={i}
       >
         {this.props.renderItem(item, i)}
       </li>
