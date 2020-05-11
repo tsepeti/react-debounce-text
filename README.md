@@ -70,4 +70,12 @@ Consider importing the stylesheet `(scss)` it comes with:
 
 ```SCSS
 @import "../../node_modules/react-debounce-text/styles/style"
-``
+```
+
+## Props
+
+| Prop       | Type                     | Description                                      |
+|------------|--------------------------|--------------------------------------------------|
+| fetch      | function(query, success) | It run when text input is onChange.              |
+| renderItem | function(item, index)    | It renders the results single.                   |
+| onSelect   | function(item, index)    | When you click on the found result, it will run. |
