@@ -31,13 +31,15 @@ class App extends Component {
         return response.json();
       })
       .then(results => {
-        if (results.items != undefined) {
+        if (results.items) {
           let items = results.items.map((res, i) => {
             return { id: i, value: res.full_name };
           });
 
-          success(items);
+          return success(items);
         }
+        
+        return success([])
       });
   }
 
