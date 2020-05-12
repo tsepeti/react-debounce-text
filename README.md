@@ -11,11 +11,11 @@ Debounce text input for super fast react.
 
 Install through `npm`:
 
-    npm install react-debounce-text
+    npm install @tatil/react-debounce-text
     
 or `yarn`
 
-    yarn add react-debounce-text
+    yarn add @tatil/react-debounce-text
     
 ## Usage
 
