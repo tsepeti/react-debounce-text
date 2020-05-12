@@ -1,5 +1,5 @@
 {
-  "name": "react-debounce-text",
+  "name": "@tatil/react-debounce-text",
   "version": "0.0.6",
   "main": "lib/index.js",
   "license": "MIT",
