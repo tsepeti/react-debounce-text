@@ -16,6 +16,16 @@ export default class DebounceText extends Component {
     this.debounced = debounce(500, this.fetch);
   }
 
+  componentDidMount() {
+    const { initialValue } = this.props;
+
+    if (initialValue) {
+      this.setState({
+        value: initialValue
+      })
+    }
+  }
+
   changeQuery(event) {
     const { value } = event.target;
 
